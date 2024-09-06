@@ -4,7 +4,10 @@
 		<meta charset="utf-8">
 		<title>My first three.js app</title>
 		<style>
-			body { margin: 0; }
+			body { 
+				margin: 0;
+				font-family: 'Courier New', Courier, monospace;
+			}
 			.title {
 				color: white;
 				position: absolute;
@@ -14,17 +17,32 @@
 				text-align: center;
 				font-size: 4rem;
 				margin-top: 5rem;
-
+				
 				cursor: none;
 				user-select: none;
 				-o-user-select: none;
 				-moz-user-select: none;
+			}
+			.desc {
+				color: white;
+				position: absolute;
+				bottom: 2rem;
+				
+				width: 100%;
+				
+				text-align: center;
+				font-size: 2rem;
 			}
 		</style>
 	</head>
 	<body>
 		<div class="title">
 			My Rocket
+		</div>
+		<div class="desc">
+			drag to rotate <br>
+			scroll to zoom in/out <br>
+			shift + l.click to pan around
 		</div>
 		<script type="module" src="/public/js/main.js"></script>
 	</body>
